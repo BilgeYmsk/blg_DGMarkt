@@ -10,30 +10,9 @@ import com.dgMarkt.utilities.Driver;
 
 public abstract class BasePage {
 
-//    @FindBy(xpath = "//div[@class='dropdown-toggle search-button']")
-//    public WebElement search_Btn_loc;
-//    @FindBy(xpath = "//a[@id='wishlist-total']")
-//    public WebElement wish_btn_loc;
-//
-//    @FindBy(xpath = "//div[@class='btn-group btn-block']")
-//    public WebElement shopping_cart_loc;
-
-
-
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
-
-    public String  actualText_mthd(String text) {
-
-        WebElement textLoc=Driver.get().findElement(By.xpath("//*[text()='"+text+"']"));
-        String actualText = textLoc.getText();
-        return actualText;
-
-
-    }
-
-    //***********************DGMARKT***************************
 
     @FindBy(xpath = "//span[text()='My Account']")
     public WebElement myAccount;

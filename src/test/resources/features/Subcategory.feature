@@ -1,15 +1,18 @@
 Feature:The user should be able to bring the products in the price range user want on the Sub-Category Page by using the PRICE slider.
 
-
+  @wip
   Scenario Outline:
-    Given the user select the "<Category>"
-    When  the user selects between 150  and 470 by using the Price slider
-    Then  Verify that the user should be able to bring the products in the price range
+    Given the user should be able to select a currency "<currencyType>"
+    When the user select the "<Category>"
+    And  the user selects the "<currencyType>" between 105  and 480 by using the Price slider
+    Then  Verify that the user should be able to bring the products with selected "<currency>" between 105  and 480 in the price range
     Examples:
-      | Category        |
-      | Health & Beauty |
-      | Televisions     |
-      | TV Accessories  |
-      | Networking      |
+      | Category        | currencyType     |currency|
+      | Health & Beauty | $ US Dollar      |  $      |
+      | Health & Beauty | £ Pound Sterling |£|
+      | Health & Beauty | € Euro           |€|
+
+
+
 
 

@@ -1,4 +1,6 @@
 package com.dgMarkt.pages.myAccount;
 
-public class LoginPage {
+import com.dgMarkt.pages.BasePage;
+
+public class LoginPage extends BasePage {
 }

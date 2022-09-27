@@ -1,4 +1,6 @@
 package com.dgMarkt.pages.myAccount;
 
-public class Transactions {
+import com.dgMarkt.pages.BasePage;
+
+public class Transactions extends BasePage {
 }

@@ -6,14 +6,14 @@ Feature:Register Function
 
 #    Warning: change email before running test. Because the account has been created in the previously run tests,
 #    it cannot be registered with the same account.
-  @wip
+
   Scenario Outline:Register Function positive scenario_valid credentials
     When The user enters valid "<firstname>" , "<lastname>" , "<email>", "<telephone>" ,"<password>" , "<confirm>"
     And  The user click Yes Button on Subscribe box
     And  The user click on Privacy Policy Box
     And  The user click on Continue button
     Then Verify that the user can be register mit valid Credentials
-    Then The user click on second Continue button
+    When The user click on second Continue button
     Then Verify that the user can be see his Account Page
     Examples:
       | firstname | lastname | email                | telephone  | password  | confirm   |

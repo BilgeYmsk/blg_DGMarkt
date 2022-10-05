@@ -39,6 +39,8 @@ public class HomePage extends BasePage{
     @FindBy(id = "pt-login-link")
     public WebElement login_loc;
 
+    @FindBy(css = "#cart")
+    public WebElement cartBtn;
 
 
 

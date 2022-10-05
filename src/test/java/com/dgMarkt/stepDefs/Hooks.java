@@ -1,19 +1,20 @@
 package com.dgMarkt.stepDefs;
 
-import com.dgMarkt.pages.myAccount.LoginPanel;
+
+import com.dgMarkt.pages.LoginPanel;
 import com.dgMarkt.utilities.ConfigurationReader;
+import com.dgMarkt.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import com.dgMarkt.utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
-    LoginPanel loginPanel = new LoginPanel();
+    LoginPanel loginPanel =new LoginPanel();
 
     @Before
     public void setup() {
@@ -32,7 +33,22 @@ public class Hooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", "screenshot");
         }
+
+
         Driver.closeDriver();
+    }
+
+
+    @Before("@db")
+    public void setupDb() {
+
+
+    }
+
+    @After("@db")
+    public void closeDb() {
+
+
     }
 
 

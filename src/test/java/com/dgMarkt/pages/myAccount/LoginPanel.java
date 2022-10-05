@@ -18,10 +18,14 @@ public class LoginPanel extends BasePage {
     @FindBy(css =".a-close-newsletter" )
     public  WebElement popUpNewsletterClose;
 
+    @FindBy(xpath = "//input[@class='cbk_newsletter']")
+    public WebElement popUpDontShow;
+
     public void loginPanelM(){
         popUpMail.sendKeys(ConfigurationReader.get("email"));
         popUpPassword.sendKeys(ConfigurationReader.get("password"));
         popUpLogin.click();
+        popUpDontShow.click();
         popUpNewsletterClose.click();
     }
 }

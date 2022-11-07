@@ -56,7 +56,36 @@
             <version>1.0.2</version>
         </dependency>
 
+        <!--     für jenkins  -->
 
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+
+        <!--     extend rapor icin   To generate extends report we need these 2 dependencies -->
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+
+        <!--Rapor ile cucumber uyumu icin -->
+        <!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
+        <dependency>
+            <groupId>com.vimalselvam</groupId>
+            <artifactId>cucumber-extentsreport</artifactId>
+            <version>3.0.2</version>
+        </dependency>
 
     </dependencies>
     <build>
@@ -126,7 +155,7 @@
     <profiles>
 
         <profile>
-            <id>DGMARA-81</id>
+            <id>Smoke</id>
             <build>
                 <plugins>
                     <plugin>

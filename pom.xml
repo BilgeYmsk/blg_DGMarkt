@@ -114,7 +114,7 @@
 
                     <includes>
                         <!-- for  run class or classes-->
-                        <include>**/_03_TestRunnerSmoke.java</include>
+                        <include>**/*CukesRunner.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
@@ -136,7 +136,7 @@
                         <configuration>
                             <includes>
                                 <!-- for  run class or classes-->
-                                <include>**/_03_TestRunnerSmoke.java</include>
+                                <include>**/*CukesRunner.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>

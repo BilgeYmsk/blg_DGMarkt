@@ -10,5 +10,5 @@ Feature:The user should be able to bring the products in the price range user wa
     Examples:
       | Category        | currencyType     | currency |
       | Health & Beauty | $ US Dollar      | $        |
-#      | Health & Beauty | £ Pound Sterling | £        |
-#      | Health & Beauty | € Euro           | €        |
+      | Health & Beauty | £ Pound Sterling | £        |
+      | Health & Beauty | € Euro           | €        |

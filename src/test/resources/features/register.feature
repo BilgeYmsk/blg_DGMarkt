@@ -19,9 +19,9 @@ Feature:Register Function
     Then Verify that the user can be see his Account Page
     Examples:
       | firstname | lastname | email                 | telephone  | password  | confirm   |
-      | DG        | Markt    | DG_Markt300@gmail.com | 0123654789 | Test1234! | Test1234! |
-      | 123       | Markt    | DG_Markt301@gmail.com | 0123654789 | Test1234! | Test1234! |
-      | DG        | 123      | DG_Markt302@gmail.com | 0123654789 | Test1234! | Test1234! |
+      | DG        | Markt    | DG_Markt312@gmail.com | 0123654789 | Test1234! | Test1234! |
+      | 123       | Markt    | DG_Markt313@gmail.com | 0123654789 | Test1234! | Test1234! |
+      | DG        | 123      | DG_Markt314@gmail.com | 0123654789 | Test1234! | Test1234! |
 
   @DGMARA-28
   Scenario Outline:Register Function_negative scenario

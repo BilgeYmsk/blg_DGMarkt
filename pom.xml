@@ -71,8 +71,8 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <runOrder>Alphabetical</runOrder>
                     <includes>
-                        <include>**/*CukesRunner.java</include>
-                        <include>**/*FailedTestRunner.java</include>
+                        <include>**/*CukesRunner_Jenkins.java</include>
+<!--                        <include>**/*FailedTestRunner.java</include>-->
                     </includes>
                 </configuration>
             </plugin>
@@ -114,7 +114,7 @@
 
                     <includes>
                         <!-- for  run class or classes-->
-                        <include>**/*CukesRunner.java</include>
+                        <include>**/*CukesRunner_Jenkins.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
@@ -126,7 +126,7 @@
     <profiles>
 
         <profile>
-            <id>Smoke</id>
+            <id>DGMARA-81</id>
             <build>
                 <plugins>
                     <plugin>
@@ -136,7 +136,7 @@
                         <configuration>
                             <includes>
                                 <!-- for  run class or classes-->
-                                <include>**/*CukesRunner.java</include>
+                                <include>**/*CukesRunner_Jenkins.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
